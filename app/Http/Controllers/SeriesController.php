@@ -7,16 +7,9 @@ use Illuminate\Http\Request;
 
 class SeriesController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
         $series = ['Punisher', 'Lost', "Greys Anatomy"];
-        $html = "<ul>";
-
-        foreach ($series as $serie) {
-            $html .= "<li>$serie</li>";
-        }
-
-        $html .= "</ul";
-        echo $html;
+        return view('series.index')->with("series", $series);
     }
 }
