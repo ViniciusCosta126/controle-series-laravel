@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
 <head>
     <meta charset="UTF-8">
@@ -7,8 +7,8 @@
     <title>{{$title}} | Controle de Séries</title>
 </head>
 
-<body>
-    <h1>{{$title}}</h1>
+<body class="">
+    <h1 class="">{{$title}}</h1>
     {{$slot}}
 </body>
 
