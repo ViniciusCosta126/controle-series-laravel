@@ -1,10 +1,3 @@
 <x-layout title="Nova Série">
-    <form class="" action="{{ route('series.store') }}" method="post">
-        @csrf
-        <div class="mb-3">
-            <label class="form-label" for="nome">Nome:</label>
-            <input class="form-control" type="text" name="nome" id="nome">
-        </div>
-        <button class="btn btn-primary" type="submit">Adicionar</button>
-    </form>
+    <x-series.form :action="route('series.store')" btnText='Adicionar serie' />
 </x-layout>
