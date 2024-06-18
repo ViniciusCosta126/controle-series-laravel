@@ -5,8 +5,8 @@
         @method('PUT')
     @endisset
     <div class="mb-3">
-        <label class="form-label" for="nome">Nome:</label>
-        <input class="form-control" type="text" name="nome" id="nome"
+        <label class="form-label" for="name">Nome:</label>
+        <input class="form-control" type="text" name="name" id="name"
             @isset($nome)value="{{ $nome }}"@endisset>
     </div>
     <button class="btn btn-primary" type="submit">{{ $btnText }}</button>
